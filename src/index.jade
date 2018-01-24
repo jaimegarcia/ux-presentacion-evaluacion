@@ -1,0 +1,208 @@
+mixin slide(classNames)
+  if classNames
+    section(class=classNames, data-bespoke-backdrop='backdrop ' + classNames.split(' ').map(function(className) { return 'backdrop--' + className; }).join(' '))
+      block
+  else
+    section
+      block
+
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title GESTIÓN DE OPERACIONES Y TECNOLOGÍA DE MEDIOS DIGITALES
+
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+
+  body
+
+    article
+
+      +slide('purple')
+        h1
+          | GESTIÓN DE OPERACIONES Y TECNOLOGÍA DE MEDIOS DIGITALES
+          br
+          span.subtitle Presentación y Programa
+        h3
+          | Jaime Andrés García
+          br
+          | Eafit
+          br
+          | Medellín, 24 de Enero de 2018
+
+      +slide('purple cascade')
+        h1 Objetivos (1/2)
+        p
+          | 1. Conocer sobre la gestión de proyectos UX bajo metodología Lean
+        p
+          | 2. Investigar tendencias en digital, cambios en los usos y formas de navegación y transformación de los tipos de usuarios con el fin de asociar necesidades, contexto y uso.
+        p
+          | 3. Definir estratégica y técnicamente cómo debe ser el diseño de interacción de un usuario en diferentes entornos digitales.
+      +slide('purple cascade')
+        h1 Objetivos (2/2)
+        p
+          | 4. Profundizar en el conocimiento y comportamiento digital de los usuarios y sus segmentos con herramientas de testeos, investigación y trabajo de campo.
+        p
+          | 5. Desarrollar un pensamiento analítico, logíco y de profunda atención al detalle a partir de evaluaciones que ayuden a identificar problemas de usabilidad en diferentes interfases y proponer posteriormente acciones de mejora.
+
+      +slide('blue cascade')
+        h1 Descripción Analítica del Curso
+        p
+          | 1. Introducción y gestión de proyectos UX
+        p
+          | 2. Estrategias de investigación de social y Etnografía Aplicada
+        p
+          | 3. Testeo y Evaluaciones Heurísticas
+        p
+          | 4. Diagramación y Diseño de Interacciones
+      +slide('blue cascade')
+        h1 Programación del Curso (1/6)
+        p
+          strong Clase 1 (Teórica - Práctica)
+          br
+          |  Presentación del Curso - Formación Equipos - Conceptos UX - Equipo UX - Perfil de Usuario
+        p
+          strong Clase 2 (Teórica - Práctica)
+          br
+          |  IHM - Retención y Experiencias de Largo Plazo
+        p
+          strong Clase 3 (Teórica - Práctica)
+          br
+          |  Diseño Centrado en Usuarios - Lean UX
+      +slide('blue cascade')
+        h1 Programación del Curso (2/6)
+        p
+          strong Clase 4 (Entrega Unidad 1 - 20% - 14 de Febrero)
+          br
+          |  Modelos Mentales - Generación de Perfil de Usuario para experiencia omnicanal
+        p
+          strong Clase 5 (Teórica - Práctica)
+          br
+          |  User Personas - Etnografía
+        p
+          strong Clase 6 (Trabajo de campo)
+          br
+          | Investigación social - Shadowing
+
+      +slide('blue cascade')
+        h1 Programación del Curso (3/6)
+        p
+          strong Clase 7 (Teórica - Práctica)
+          br
+          | Customer Journey Map
+        p
+          strong Clase 8 (Entrega Unidad 2 - Exposición (Presencial) - 25% - 14 de Marzo)
+          br
+          | Benchmarking - Market Research
+          br
+          | Construcción de User Personas, Customer Journey Map e Investigación Etnográfica Básica para Experiencia Omnicanal
+        p
+          strong Clase 9 (Teórica - Práctica)
+          br
+          | 10 Heurísticas de Nielsen
+      +slide('blue cascade')
+        h1 Programación del Curso (4/6)
+        p
+          strong Clase 10 (Teórica - Práctica)
+          br
+          | Pruebas con Usuarios
+        p
+          strong Clase 11 (Entrega Unidad 3 - 25% - 11 de Abril)
+          br
+          | A/B Testing
+          br
+          | Evaluación heurística de interfaz, Curva UX, Retención y Diseño y Ejecución de Prueba A/B para misiones de compra en experiencia omnicanal
+        p
+          strong Clase 12 (Teórica - Práctica)
+          br
+          | Diseño de Flujos - Mapa de Navegación
+      +slide('blue cascade')
+        h1 Programación del Curso (5/6)
+        p
+          strong Clase 13 (Teórica - Práctica)
+          br
+          | Arquitectura de Información - Card Sorting
+        p
+          strong Clase 14 (Teórica - Práctica)
+          br
+          | Wireframes Responsivos
+        p
+          strong Clase 15 (Teórica - Práctica)
+          br
+          | Wireframes Móviles
+
+      +slide('blue cascade')
+        h1 Programación del Curso (6/6)
+        p
+          strong Clase 16 (Teórica - Práctica)
+          br
+          | Wireframes Móviles - Zero UI - Inteligencia Artificial
+        p
+          strong Clase 17 (Entrega Unidad 4 - Exposición (Presencial) - 30% - 23 de Mayo (Tentativa))
+          br
+          | Diagramación y Diseño de interacción móvil, web, en punto de venta y de inteligencia artificial para experiencia omnicanal
+      +slide('green cascade')
+        h1 Evaluación del Curso (1/2)
+        p
+          | Generación de Perfil de Usuario para experiencia omnicanal
+          br
+          strong  (Individual - Envío de Trabajo - 20 % - 14 de Febrero)
+        p
+          | Construcción de User Personas, Customer Journey Map e Investigación Etnográfica Básica para Experiencia Omnicanal - Grupo - Exposición
+          br
+          strong  (Grupal - Exposición - Presencial - 25 % - 14 de Marzo)
+      +slide('green cascade')
+        h1 Evaluación del Curso (2/2)
+        p
+          | Evaluación heurística de interfaz, Curva UX, Retención y Diseño y Ejecución de Prueba A/B para misiones de compra en experiencia omnicanal
+          br
+          strong  (Individual - Envío de Trabajo - 25 % - 11 de Abril)
+        p
+          | Diagramación y Diseño de interacción móvil, web, en punto de venta y de inteligencia artificial para experiencia omnicanal
+          br
+          strong  (Grupal - Exposición Final - Presencial - 30 % - 23 de Mayo (Tentativa))
+
+      +slide('red cascade')
+        h1 Pautas de Evaluación (1/2)
+        | Sólo se requiere la asistencia de los estudiantes los días 14 de Marzo y 23 de Mayo (Tentativa)
+        br
+        br
+        | Se entregará Rubríca de Evaluación para cada actividad en la segunda clase
+        br
+        br
+        | Se evaluará completitud - no se realizarán evaluaciones subjetivas
+
+      +slide('red cascade')
+        h1 Pautas de Evaluación (2/2)
+        | En las exposiciones, cada persona debe cumplir un rol, se evaluará la respuesta o no de inquietudes del profesor y alumnos
+        br
+        br
+        | El estudiante podrá entregar los trabajos posterior a la fecha de entrega (Máximo hasta el 23 de Mayo)
+        br
+        br
+        | Por cada día extra utilizado para el envío, se realizará una rebaja de 0.5 en la nota
+
+      +slide('white cascade references')
+        h1 Referencias Principales del Curso (1/4)
+        p Norman, Donald (2013) The Design of Everyday Things: Revised and Expanded Edition. Basic Books
+        p Curso Gratis: https://www.udacity.com/course/intro-to-the-design-of-everyday-things--design101
+        p Artículos Interaction Design Foundation: https://www.interaction-design.org/literature
+      +slide('white cascade references')
+        h1 Referencias Principales del Curso (2/4)
+        p Krug, Steve (2006). “No me hagas pensar. Una aproximación a la Usabilidad web”. Madrid: Segunda Edición Pearson Educación S.A.
+        p Krug, Steve (2010). “Haz fácil lo imposible. La guía para detectar y determinar los problemas de usabilidad”. Madrid: Ediciones Anaya.
+        p Vianna, Mauricio. Vianna, Ysmar. Adler, Isabel. Lucena, Brenda. Russo, Beatriz. “Desing thinking. Innovación en negocios”. 1ª Edición Electrónica. Junio 2013
+      +slide('white cascade references')
+        h1 Referencias Principales del Curso (3/4)
+        p Gothelf, Jeff. Seiden, Josh. (2014) “Lean UX. Cómo aplicar los principios Lean a la mejora de la experiencia de usuario”. Universidad Internacional de la Rioja.
+        p Reis, Eric. (2011). The lean startup. New York: Crown Business.
+      +slide('white cascade references')
+        h1 Referencias Principales del Curso (4/4)
+        p Márquez Correa, Joaquín. “Guía par evaluación experta”. http://www.jmarquez.com/documentos/jm_checklist.pdf
+        p Treder, Marcin (2013). “UX desing para Startups”. Edición electrónica en www.uxpin.com
+        p Hassan, Yusef. Ortega, Sergio. (2009). “Informe APEI sobre usabilidad”. Edición APEI.
+
+
+
+    script(src='build/build.js')
